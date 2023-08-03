@@ -4,7 +4,7 @@ hideDivs();
 const observer = new MutationObserver(hideDivs);
 
 // Run on childList changes under parent element  
-observer.observe(parentElem, {
+observer.observe(document, {
     childList: true
 });
 
